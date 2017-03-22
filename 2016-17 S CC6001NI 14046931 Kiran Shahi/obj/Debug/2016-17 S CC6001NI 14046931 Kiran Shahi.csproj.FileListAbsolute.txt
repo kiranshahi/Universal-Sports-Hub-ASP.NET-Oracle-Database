@@ -1,0 +1,46 @@
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\csc.exe
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\vbc.exe
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\VBCSCompiler.exe
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\2016-17 S CC6001NI 14046931 Kiran Shahi.dll.config
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\2016-17 S CC6001NI 14046931 Kiran Shahi.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\2016-17 S CC6001NI 14046931 Kiran Shahi.pdb
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Antlr3.Runtime.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\EntityFramework.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\EntityFramework.SqlServer.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Newtonsoft.Json.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Oracle.ManagedDataAccess.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Helpers.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Mvc.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Optimization.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Razor.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.WebPages.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.WebPages.Razor.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\WebGrease.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\EntityFramework.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\EntityFramework.SqlServer.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Helpers.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Mvc.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Optimization.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.Razor.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.WebPages.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\System.Web.WebPages.Razor.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Antlr3.Runtime.pdb
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\bin\Newtonsoft.Json.xml
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\obj\Debug\2016-17 S CC6001NI 14046931 Kiran Shahi.csprojResolveAssemblyReference.cache
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\obj\Debug\2016-17 S CC6001NI 14046931 Kiran Shahi.dll
+C:\Users\kirans\Documents\Visual Studio 2015\Projects\2016-17 S CC6001NI 14046931 Kiran Shahi\2016-17 S CC6001NI 14046931 Kiran Shahi\obj\Debug\2016-17 S CC6001NI 14046931 Kiran Shahi.pdb

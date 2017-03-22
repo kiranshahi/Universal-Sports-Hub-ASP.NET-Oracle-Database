@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="UniversalSportsHubEntities">
+    <EntitySetMapping Name="ACTIVITIES">
+      <EntityTypeMapping TypeName="Model.ACTIVITy">
+        <MappingFragment StoreEntitySet="ACTIVITIES">
+          <ScalarProperty Name="ACTIVITY_ID" ColumnName="ACTIVITY_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PERIOD" ColumnName="PERIOD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CUSTOMERS">
+      <EntityTypeMapping TypeName="Model.CUSTOMER">
+        <MappingFragment StoreEntitySet="CUSTOMERS">
+          <ScalarProperty Name="REF_NO" ColumnName="REF_NO" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="DATE_OF_BIRTH" ColumnName="DATE_OF_BIRTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EQUIPMENTS">
+      <EntityTypeMapping TypeName="Model.EQUIPMENT">
+        <MappingFragment StoreEntitySet="EQUIPMENTS">
+          <ScalarProperty Name="EQUIPMENT_ID" ColumnName="EQUIPMENT_ID" />
+          <ScalarProperty Name="EQUIPMENT_NAME" ColumnName="EQUIPMENT_NAME" />
+          <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROOMS">
+      <EntityTypeMapping TypeName="Model.ROOM">
+        <MappingFragment StoreEntitySet="ROOMS">
+          <ScalarProperty Name="ROOM_ID" ColumnName="ROOM_ID" />
+          <ScalarProperty Name="ROOM_NAME" ColumnName="ROOM_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SESSIONS">
+      <EntityTypeMapping TypeName="Model.SESSION">
+        <MappingFragment StoreEntitySet="SESSIONS">
+          <ScalarProperty Name="SESSION_CODE" ColumnName="SESSION_CODE" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="ACTIVITY_ID" ColumnName="ACTIVITY_ID" />
+          <ScalarProperty Name="ROOM_ID" ColumnName="ROOM_ID" />
+          <ScalarProperty Name="REF_NO" ColumnName="REF_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STAFFS">
+      <EntityTypeMapping TypeName="Model.STAFF">
+        <MappingFragment StoreEntitySet="STAFFS">
+          <ScalarProperty Name="STAFF_ID" ColumnName="STAFF_ID" />
+          <ScalarProperty Name="STAFF_NAME" ColumnName="STAFF_NAME" />
+          <ScalarProperty Name="STAFF_DESIGNATION" ColumnName="STAFF_DESIGNATION" />
+          <ScalarProperty Name="STAFF_TYPE" ColumnName="STAFF_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EQUIP_SESS" TypeName="Model.EQUIP_SESS" StoreEntitySet="EQUIP_SESS">
+      <EndProperty Name="EQUIPMENTS">
+        <ScalarProperty Name="EQUIPMENT_ID" ColumnName="EQUIPMENT_ID" />
+      </EndProperty>
+      <EndProperty Name="SESSIONS">
+        <ScalarProperty Name="SESSION_CODE" ColumnName="SESSION_CODE" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SESSION_STAFF" TypeName="Model.SESSION_STAFF" StoreEntitySet="SESSION_STAFF">
+      <EndProperty Name="STAFFS">
+        <ScalarProperty Name="STAFF_ID" ColumnName="STAFF_ID" />
+      </EndProperty>
+      <EndProperty Name="SESSIONS">
+        <ScalarProperty Name="SESSION_CODE" ColumnName="SESSION_CODE" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

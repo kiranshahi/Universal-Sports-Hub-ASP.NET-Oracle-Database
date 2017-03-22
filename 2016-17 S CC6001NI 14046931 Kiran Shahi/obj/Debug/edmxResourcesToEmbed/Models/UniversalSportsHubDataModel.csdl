@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ACTIVITy">
+    <Key>
+      <PropertyRef Name="ACTIVITY_ID" />
+    </Key>
+    <Property Name="ACTIVITY_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PERIOD" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SESSIONS" Relationship="Self.SESSIONS_ACTIVITIES_FK" FromRole="ACTIVITIES" ToRole="SESSIONS" />
+  </EntityType>
+  <EntityType Name="CUSTOMER">
+    <Key>
+      <PropertyRef Name="REF_NO" />
+    </Key>
+    <Property Name="REF_NO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATE_OF_BIRTH" Type="DateTime" />
+    <NavigationProperty Name="SESSIONS" Relationship="Self.SESSIONS_CUSTOMERS_FK" FromRole="CUSTOMERS" ToRole="SESSIONS" />
+  </EntityType>
+  <EntityType Name="EQUIPMENT">
+    <Key>
+      <PropertyRef Name="EQUIPMENT_ID" />
+    </Key>
+    <Property Name="EQUIPMENT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="EQUIPMENT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QUANTITY" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <NavigationProperty Name="SESSIONS" Relationship="Self.EQUIP_SESS" FromRole="EQUIPMENTS" ToRole="SESSIONS" />
+  </EntityType>
+  <EntityType Name="ROOM">
+    <Key>
+      <PropertyRef Name="ROOM_ID" />
+    </Key>
+    <Property Name="ROOM_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ROOM_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SESSIONS" Relationship="Self.SESSIONS_ROOMS_FK" FromRole="ROOMS" ToRole="SESSIONS" />
+  </EntityType>
+  <EntityType Name="SESSION">
+    <Key>
+      <PropertyRef Name="SESSION_CODE" />
+    </Key>
+    <Property Name="SESSION_CODE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_TIME" Type="DateTime" Nullable="false" />
+    <Property Name="ACTIVITY_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ROOM_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="REF_NO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ACTIVITy" Relationship="Self.SESSIONS_ACTIVITIES_FK" FromRole="SESSIONS" ToRole="ACTIVITIES" />
+    <NavigationProperty Name="CUSTOMER" Relationship="Self.SESSIONS_CUSTOMERS_FK" FromRole="SESSIONS" ToRole="CUSTOMERS" />
+    <NavigationProperty Name="ROOM" Relationship="Self.SESSIONS_ROOMS_FK" FromRole="SESSIONS" ToRole="ROOMS" />
+    <NavigationProperty Name="EQUIPMENTS" Relationship="Self.EQUIP_SESS" FromRole="SESSIONS" ToRole="EQUIPMENTS" />
+    <NavigationProperty Name="STAFFS" Relationship="Self.SESSION_STAFF" FromRole="SESSIONS" ToRole="STAFFS" />
+  </EntityType>
+  <EntityType Name="STAFF">
+    <Key>
+      <PropertyRef Name="STAFF_ID" />
+    </Key>
+    <Property Name="STAFF_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="STAFF_NAME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STAFF_DESIGNATION" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STAFF_TYPE" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SESSIONS" Relationship="Self.SESSION_STAFF" FromRole="STAFFS" ToRole="SESSIONS" />
+  </EntityType>
+  <Association Name="SESSIONS_ACTIVITIES_FK">
+    <End Role="ACTIVITIES" Type="Self.ACTIVITy" Multiplicity="1" />
+    <End Role="SESSIONS" Type="Self.SESSION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACTIVITIES">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Principal>
+      <Dependent Role="SESSIONS">
+        <PropertyRef Name="ACTIVITY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SESSIONS_CUSTOMERS_FK">
+    <End Role="CUSTOMERS" Type="Self.CUSTOMER" Multiplicity="1" />
+    <End Role="SESSIONS" Type="Self.SESSION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUSTOMERS">
+        <PropertyRef Name="REF_NO" />
+      </Principal>
+      <Dependent Role="SESSIONS">
+        <PropertyRef Name="REF_NO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SESSIONS_ROOMS_FK">
+    <End Role="ROOMS" Type="Self.ROOM" Multiplicity="1" />
+    <End Role="SESSIONS" Type="Self.SESSION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROOMS">
+        <PropertyRef Name="ROOM_ID" />
+      </Principal>
+      <Dependent Role="SESSIONS">
+        <PropertyRef Name="ROOM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EQUIP_SESS">
+    <End Role="EQUIPMENTS" Type="Self.EQUIPMENT" Multiplicity="*" />
+    <End Role="SESSIONS" Type="Self.SESSION" Multiplicity="*" />
+  </Association>
+  <Association Name="SESSION_STAFF">
+    <End Role="STAFFS" Type="Self.STAFF" Multiplicity="*" />
+    <End Role="SESSIONS" Type="Self.SESSION" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="UniversalSportsHubEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACTIVITIES" EntityType="Self.ACTIVITy" />
+    <EntitySet Name="CUSTOMERS" EntityType="Self.CUSTOMER" />
+    <EntitySet Name="EQUIPMENTS" EntityType="Self.EQUIPMENT" />
+    <EntitySet Name="ROOMS" EntityType="Self.ROOM" />
+    <EntitySet Name="SESSIONS" EntityType="Self.SESSION" />
+    <EntitySet Name="STAFFS" EntityType="Self.STAFF" />
+    <AssociationSet Name="SESSIONS_ACTIVITIES_FK" Association="Self.SESSIONS_ACTIVITIES_FK">
+      <End Role="ACTIVITIES" EntitySet="ACTIVITIES" />
+      <End Role="SESSIONS" EntitySet="SESSIONS" />
+    </AssociationSet>
+    <AssociationSet Name="SESSIONS_CUSTOMERS_FK" Association="Self.SESSIONS_CUSTOMERS_FK">
+      <End Role="CUSTOMERS" EntitySet="CUSTOMERS" />
+      <End Role="SESSIONS" EntitySet="SESSIONS" />
+    </AssociationSet>
+    <AssociationSet Name="SESSIONS_ROOMS_FK" Association="Self.SESSIONS_ROOMS_FK">
+      <End Role="ROOMS" EntitySet="ROOMS" />
+      <End Role="SESSIONS" EntitySet="SESSIONS" />
+    </AssociationSet>
+    <AssociationSet Name="EQUIP_SESS" Association="Self.EQUIP_SESS">
+      <End Role="EQUIPMENTS" EntitySet="EQUIPMENTS" />
+      <End Role="SESSIONS" EntitySet="SESSIONS" />
+    </AssociationSet>
+    <AssociationSet Name="SESSION_STAFF" Association="Self.SESSION_STAFF">
+      <End Role="STAFFS" EntitySet="STAFFS" />
+      <End Role="SESSIONS" EntitySet="SESSIONS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

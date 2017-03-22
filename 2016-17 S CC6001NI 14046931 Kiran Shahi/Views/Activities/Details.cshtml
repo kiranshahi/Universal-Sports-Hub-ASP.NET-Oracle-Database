@@ -1,0 +1,32 @@
+﻿@model _2016_17_S_CC6001NI_14046931_Kiran_Shahi.Models.ACTIVITy
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ACTIVITy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ACTIVITY_ID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ACTIVITY_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ACTIVITY_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
